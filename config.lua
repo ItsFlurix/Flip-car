@@ -1,8 +1,8 @@
 Config = {}
 
-Config.UseESX = true						-- Use ESX Framework
+Config.enableUpdates = true                 -- Check GitHub version.
 
---fixing this Flipcar.Version = true                       -- Check GitHub version.
+Config.UseESX = true		-- Use ESX Framework
 
 Config.UseCustomNotify = true				-- Use a custom notification script, must complete event below.
 
@@ -10,14 +10,6 @@ Config.UseCustomNotify = true				-- Use a custom notification script, must compl
 RegisterNetEvent('flipcar-Ryder:CustomNotify')
 AddEventHandler('flipcar-Ryder:CustomNotify', function(message, type)
     --exports.mythic_notify:SendAlert(type, message, 4000)
-	exports.bulletin:SendAdvanced({
-		message = message,
-		title = 'VEHICULO',
-		subject = 'Name Server',
-		icon = 'ICON_SERVER',
-		theme = 'default',
-		progress = true
-	})
 end)
 
 Config.TimetoFlip = 3 						-- How long, in seconds, to flip the car.
@@ -26,8 +18,8 @@ Config.Jobs = {								-- List of permitted jobs; leave empty table for to allow
 	--["police"] = 0,
 	--["mechanic"] = 0,
 }
-Config.AndOr = false				        --  Logic to determine item requirement, change this to true to use an item
-Config.RequiredItem = 'itemnamehere'		-- Replace 'itemnamehere' with item to be used for flipping vehicles, it is NOT removed on use, it only needs to be in the inventory (can be ignored if Config.AndOr = or and no item is wanted). 
+Config.AndOr = false -- Don`t change		--  Logic to determine item requirement, change this to true to use an item
+Config.RequiredItem = 'Workingtofix'		-- Replace 'itemnamehere' with item to be used for flipping vehicles, it is NOT removed on use, it only needs to be in the inventory (can be ignored if Config.AndOr = or and no item is wanted). 
 
 
 -- Visual Preference
