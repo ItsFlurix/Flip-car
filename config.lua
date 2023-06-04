@@ -1,9 +1,8 @@
 Config = {}
 
-
 Config.UseESX = true						-- Use ESX Framework
 
-Flipcar.Version = true                       -- Check GitHub version.
+--fixing this Flipcar.Version = true                       -- Check GitHub version.
 
 Config.UseCustomNotify = true				-- Use a custom notification script, must complete event below.
 
